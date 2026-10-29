@@ -1,0 +1,277 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.depthlock"
+4    android:versionCode="3"
+5    android:versionName="3.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="34"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+11-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:4:5-72
+11-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:4:22-69
+12    <uses-permission android:name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE" />
+12-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:5:5-93
+12-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:5:22-90
+13
+14    <!-- Needed to read SystemUI's localized strings (shade detection) -->
+15    <queries>
+15-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:8:5-10:15
+16        <package android:name="com.android.systemui" />
+16-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:9:9-56
+16-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:9:18-53
+17    </queries>
+18
+19    <permission
+19-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.depthlock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.depthlock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+23-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+24    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+25-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+27
+28    <application
+28-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:12:5-54:19
+29        android:allowBackup="false"
+29-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:13:9-36
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.15.0] /home/kumiko/.gradle/caches/8.13/transforms/d4584272c348b8e1d30128687bb4d3fd/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:14:9-43
+34        android:label="@string/app_name"
+34-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:16:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:15:9-54
+36        android:theme="@style/Theme.DepthLock" >
+36-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:17:9-47
+37        <meta-data
+37-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:19:9-21:47
+38            android:name="com.google.mlkit.vision.DEPENDENCIES"
+38-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:20:13-64
+39            android:value="subject_segment" />
+39-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:21:13-44
+40
+41        <activity
+41-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:23:9-30:20
+42            android:name="com.example.depthlock.MainActivity"
+42-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:24:13-41
+43            android:exported="true" >
+43-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:25:13-36
+44            <intent-filter>
+44-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:26:13-29:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:27:17-69
+45-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:27:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:28:17-77
+47-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:28:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <service
+51-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:32:9-43:19
+52            android:name="com.example.depthlock.DepthOverlayService"
+52-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:33:13-48
+53            android:exported="true"
+53-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:34:13-36
+54            android:label="@string/app_name"
+54-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:35:13-45
+55            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+55-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:36:13-79
+56            <intent-filter>
+56-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:37:13-39:29
+57                <action android:name="android.accessibilityservice.AccessibilityService" />
+57-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:38:17-92
+57-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:38:25-89
+58            </intent-filter>
+59
+60            <meta-data
+60-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:40:13-42:72
+61                android:name="android.accessibilityservice"
+61-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:41:17-60
+62                android:resource="@xml/accessibility_service_config" />
+62-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:42:17-69
+63        </service>
+64        <service
+64-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:45:9-53:19
+65            android:name="com.example.depthlock.NotifListener"
+65-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:46:13-42
+66            android:exported="true"
+66-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:47:13-36
+67            android:label="@string/app_name"
+67-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:48:13-45
+68            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+68-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:49:13-87
+69            <intent-filter>
+69-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:50:13-52:29
+70                <action android:name="android.service.notification.NotificationListenerService" />
+70-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:51:17-99
+70-->/home/kumiko/Downloads/DepthLock3/app/src/main/AndroidManifest.xml:51:25-96
+71            </intent-filter>
+72        </service>
+73        <service
+73-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:8:9-14:19
+74            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+74-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:9:13-91
+75            android:directBootAware="true"
+75-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:17:13-43
+76            android:exported="false" >
+76-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:10:13-37
+77            <meta-data
+77-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:11:13-13:85
+78                android:name="com.google.firebase.components:com.google.mlkit.vision.segmentation.subject.internal.SubjectSegmentationRegistrar"
+78-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:12:17-145
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.android.gms:play-services-mlkit-subject-segmentation:16.0.0-beta1] /home/kumiko/.gradle/caches/8.13/transforms/78a29604db50db93f49f65dd2931ad99/transformed/play-services-mlkit-subject-segmentation-16.0.0-beta1/AndroidManifest.xml:13:17-82
+80            <meta-data
+80-->[com.google.mlkit:vision-common:17.3.0] /home/kumiko/.gradle/caches/8.13/transforms/74e3c2986b4a4952e7d956fb1bf19490/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+81                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+81-->[com.google.mlkit:vision-common:17.3.0] /home/kumiko/.gradle/caches/8.13/transforms/74e3c2986b4a4952e7d956fb1bf19490/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.mlkit:vision-common:17.3.0] /home/kumiko/.gradle/caches/8.13/transforms/74e3c2986b4a4952e7d956fb1bf19490/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+83            <meta-data
+83-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:20:13-22:85
+84                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+84-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:21:17-120
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:22:17-82
+86        </service>
+87
+88        <provider
+88-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:9:9-13:38
+89            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+89-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:10:13-78
+90            android:authorities="com.example.depthlock.mlkitinitprovider"
+90-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:11:13-69
+91            android:exported="false"
+91-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:12:13-37
+92            android:initOrder="99" />
+92-->[com.google.mlkit:common:18.10.0] /home/kumiko/.gradle/caches/8.13/transforms/1260430c09f1c98b3bfc9d0efd303e0e/transformed/common-18.10.0/AndroidManifest.xml:13:13-35
+93
+94        <activity
+94-->[com.google.android.gms:play-services-base:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/62599984146fa1097b5a5f1568bd5961/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+95-->[com.google.android.gms:play-services-base:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/62599984146fa1097b5a5f1568bd5961/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-base:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/62599984146fa1097b5a5f1568bd5961/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-base:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/62599984146fa1097b5a5f1568bd5961/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/05313bed1cc1be34ab4d86553d93b797/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/05313bed1cc1be34ab4d86553d93b797/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:18.1.0] /home/kumiko/.gradle/caches/8.13/transforms/05313bed1cc1be34ab4d86553d93b797/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+102
+103        <provider
+103-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+104            android:name="androidx.startup.InitializationProvider"
+104-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+105            android:authorities="com.example.depthlock.androidx-startup"
+105-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+106            android:exported="false" >
+106-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+107            <meta-data
+107-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+108                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+108-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+109                android:value="androidx.startup" />
+109-->[androidx.emoji2:emoji2:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/19bc97ee37ee04f38c3b1d3a62994556/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+110            <meta-data
+110-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/kumiko/.gradle/caches/8.13/transforms/f8ee69ff57ae747e59d96351f4c4dcf2/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+111-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/kumiko/.gradle/caches/8.13/transforms/f8ee69ff57ae747e59d96351f4c4dcf2/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+112                android:value="androidx.startup" />
+112-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/kumiko/.gradle/caches/8.13/transforms/f8ee69ff57ae747e59d96351f4c4dcf2/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+115                android:value="androidx.startup" />
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+116        </provider>
+117
+118        <service
+118-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+119            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+119-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+120            android:exported="false" >
+120-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+121            <meta-data
+121-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+122                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+122-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+123                android:value="cct" />
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/kumiko/.gradle/caches/8.13/transforms/2db825f09ca5c04beb786274ae123789/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+124        </service>
+125        <service
+125-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+126            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+126-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+127            android:exported="false"
+127-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+128            android:permission="android.permission.BIND_JOB_SERVICE" >
+128-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+129        </service>
+130
+131        <receiver
+131-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+132            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+133            android:exported="false" />
+133-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/kumiko/.gradle/caches/8.13/transforms/d7f7d04bce27f4447279da691ac1a610/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/kumiko/.gradle/caches/8.13/transforms/f4bc6f9d7bca2a2a861fc508469bede1/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153    </application>
+154
+155</manifest>

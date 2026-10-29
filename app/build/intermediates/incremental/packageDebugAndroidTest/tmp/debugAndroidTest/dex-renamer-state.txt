@@ -1,0 +1,4 @@
+#Thu Oct 29 22:18:01 EET 2026
+base.0=/home/kumiko/Downloads/DepthLock3/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

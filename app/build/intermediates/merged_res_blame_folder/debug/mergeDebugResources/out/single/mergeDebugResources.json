@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.depthlock.app-debug-50:/drawable_ic_launcher_monochrome.xml.flat",
+        "source": "com.example.depthlock.app-main-52:/drawable/ic_launcher_monochrome.xml"
+    },
+    {
+        "merged": "com.example.depthlock.app-debug-50:/xml_accessibility_service_config.xml.flat",
+        "source": "com.example.depthlock.app-main-52:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.example.depthlock.app-debug-50:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.depthlock.app-main-52:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.depthlock.app-debug-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.depthlock.app-main-52:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.depthlock.app-debug-50:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.depthlock.app-main-52:/mipmap-anydpi/ic_launcher.xml"
+    }
+]

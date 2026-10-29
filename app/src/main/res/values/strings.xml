@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DepthLock</string>
+    <string name="a11y_description">Draws a cut-out of your lockscreen photo subject on top of the clock. It only looks at the system lockscreen (SystemUI) to detect the PIN keypad, notifications and the notification shade so it can hide itself. Nothing is stored or sent anywhere.</string>
+</resources>
